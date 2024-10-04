@@ -14,7 +14,7 @@ const LatLngSchema = new Schema(
 
 const OrderItemSchema = new Schema(
   {
-    food: { type: Schema.Types.ObjectId, ref: "food", required: true }, // Relationship with FoodModel
+    food: { type: Schema.Types.ObjectId, ref: "food", required: true },
     price: { type: Number, required: true },
     quantity: { type: Number, required: true },
   },
